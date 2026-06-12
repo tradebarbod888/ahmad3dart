@@ -1,10 +1,12 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahmad Tajik | Interior Designer</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,6 +103,14 @@ header p{
 .btn:hover{
     background:#b89128;
     transform:translateY(-3px);
+}
+
+/* Hero Logo */
+.hero-logo{
+    width:220px;
+    max-width:80%;
+    margin-bottom:25px;
+    filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
 }
 
 /* About */
@@ -214,6 +224,34 @@ footer{
     cursor:pointer;
 }
 
+/* WhatsApp Float Button */
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:30px;
+    right:30px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 6px 20px rgba(0,0,0,.3);
+    z-index:1000;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+.whatsapp-float img{
+    width:35px;
+    height:35px;
+}
+
 /* Responsive */
 
 @media(max-width:768px){
@@ -254,11 +292,13 @@ footer{
 
 <div class="hero-content">
 
-<h1>Ahmad Tajik</h1>
+<img src="logo.png" alt="AHMAD3DART Logo" class="hero-logo">
 
-<p>Interior Designer & 3D Visualization Artist</p>
+<h1>AHMAD3DART</h1>
 
-<p>Kastamonu, Türkiye</p>
+<p>Interior Architecture & Design</p>
+
+<p>Kastamonu, Türkiye • Available Worldwide</p>
 
 <a href="#portfolio" class="btn">View Portfolio</a>
 
@@ -393,6 +433,16 @@ Telegram<br>
 
 </div>
 
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/905349125574"
+   class="whatsapp-float"
+   target="_blank">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
+
+</a>
+
 <script>
 
 function openImage(src){
@@ -413,4 +463,3 @@ document.getElementById("lightbox").style.display="none";
 
 </body>
 </html>
-```
